@@ -19,9 +19,10 @@ spec:
     metadata:
       name: '{{path.basename}}-{{name}}'
     spec:
-      project: '{{metadata.labels.environment}}'
+      #project: '{{metadata.labels.environment}}'
+      project: default
       source:
-        repoURL: https://github.com/argoproj/argo-cd.git
+        repoURL: https://github.com/codefresh-contrib/gitops-cert-level-2-examples.git
         targetRevision: HEAD
         path: '{{path}}'
       destination:
