@@ -4,7 +4,7 @@ metadata:
   namespace: example06
   generateName: cleanup-after-sync-
   labels:
-    codefresh.io/cert: cleanup-job  
+    codefresh.io/cert: cleanup-job: "20"  
 spec:
   template:
     spec:
